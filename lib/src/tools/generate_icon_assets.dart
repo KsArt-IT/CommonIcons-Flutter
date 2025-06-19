@@ -2,8 +2,8 @@ import 'dart:io';
 
 void main() {
   const iconDirPath = 'assets/icons';
-  const outputFilePath = 'lib/icon_assets.dart';
-  const packageBasePath = 'packages/icons/$iconDirPath';
+  const outputFilePath = 'lib/src/icon_assets.dart';
+  const packageBasePath = 'packages/core/icons/$iconDirPath';
 
   final iconDir = Directory(iconDirPath);
   if (!iconDir.existsSync()) {

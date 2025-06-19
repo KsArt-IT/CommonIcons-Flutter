@@ -1,0 +1,1 @@
+export 'src/icon_assets.dart';

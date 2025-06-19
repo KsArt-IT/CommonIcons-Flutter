@@ -2,7 +2,7 @@
 // Run `./gen_icons.sh` to regenerate.
 
 class IconAssets {
-  static const _basePath = 'packages/icons/assets/icons';
+  static const _basePath = 'packages/core/icons/assets/icons';
 
   static const String vscode = '$_basePath/vscode.svg';
   static const String linux = '$_basePath/linux.svg';

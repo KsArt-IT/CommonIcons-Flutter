@@ -4,7 +4,7 @@
 # ./gen_icons.sh
 echo "⚙️  Generating icons..."
 
-dart lib/src/generate_icon_assets.dart
+dart lib/src/tools/generate_icon_assets.dart
 
 # Checking the return code
 if [ $? -eq 0 ]; then
