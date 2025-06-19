@@ -1,0 +1,17 @@
+name: core_icons
+description: Icons for app.
+version: 0.0.1
+homepage: https://github.com/KsArt-IT/CommonIcons-Flutter.git
+
+environment:
+  sdk: ^3.8.1
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
