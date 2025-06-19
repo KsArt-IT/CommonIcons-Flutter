@@ -8,8 +8,11 @@ class IconAssets {
   static const String linux = '$_basePath/linux.svg';
   static const String gmail = '$_basePath/gmail.svg';
   static const String microsoftTodo = '$_basePath/microsoft-todo.svg';
+  static const String editToolsGreen = '$_basePath/edit-tools-green.svg';
+  static const String applyGreen = '$_basePath/apply-green.svg';
   static const String flutter = '$_basePath/flutter.svg';
   static const String git = '$_basePath/git.svg';
+  static const String update = '$_basePath/update.svg';
   static const String deepseek = '$_basePath/deepseek.svg';
   static const String kotlin = '$_basePath/kotlin.svg';
   static const String dart = '$_basePath/dart.svg';
@@ -18,7 +21,9 @@ class IconAssets {
   static const String appleLight = '$_basePath/apple_light.svg';
   static const String windows = '$_basePath/windows.svg';
   static const String androidIcon = '$_basePath/android-icon.svg';
+  static const String delete = '$_basePath/delete.svg';
   static const String twitter = '$_basePath/twitter.svg';
   static const String swift = '$_basePath/swift.svg';
   static const String appleDark = '$_basePath/apple_dark.svg';
+  static const String deleteGreen = '$_basePath/delete-green.svg';
 }
