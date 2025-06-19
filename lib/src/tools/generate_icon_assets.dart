@@ -2,8 +2,8 @@ import 'dart:io';
 
 void main() {
   const iconDirPath = 'assets/icons';
-  const outputFilePath = 'lib/src/icon_assets.dart';
-  const packageBasePath = 'packages/core/icons/$iconDirPath';
+  const outputFilePath = 'lib/src/icon_assets.g.dart';
+  const packageBasePath = 'packages/core_icons/$iconDirPath';
 
   final iconDir = Directory(iconDirPath);
   if (!iconDir.existsSync()) {
@@ -26,7 +26,11 @@ void main() {
   buffer.writeln('// GENERATED FILE - DO NOT MODIFY MANUALLY');
   buffer.writeln('// Run `./gen_icons.sh` to regenerate.');
   buffer.writeln();
+  buffer.writeln("import 'package:flutter_svg/svg.dart';");
+  buffer.writeln();
   buffer.writeln('class IconAssets {');
+  buffer.writeln("  IconAssets._();");
+  buffer.writeln("  static final shared = IconAssets._();");
   buffer.writeln("  static const _basePath = '$packageBasePath';");
   buffer.writeln();
 
@@ -35,7 +39,7 @@ void main() {
     final iconName = fileName.replaceAll('.svg', '');
     final variableName = _toCamelCase(iconName);
 
-    buffer.writeln("  static const String $variableName = '\$_basePath/$fileName';");
+    buffer.writeln("  SvgPicture get $variableName => SvgPicture.asset('\$_basePath/$fileName');");
   }
 
   buffer.writeln('}');

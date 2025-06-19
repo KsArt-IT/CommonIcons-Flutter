@@ -1,1 +1,1 @@
-export 'src/icon_assets.dart';
+export 'src/icon_assets.g.dart';
